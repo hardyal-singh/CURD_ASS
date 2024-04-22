@@ -7,7 +7,7 @@ import env from "dotenv";
 env.config()
 const app = express()
 const corsOptions = {
-    origin:"http://localhost:5173", // Specify your frontend application's origin
+    origin:process.env.FRONTEND_URL, // Specify your frontend application's origin
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
     credentials: true, // Allow credentials (cookies, authorization headers, etc.)
     optionsSuccessStatus: 204, // Some legacy browsers (IE11, various SmartTVs) choke on 204
