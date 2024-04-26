@@ -52,7 +52,7 @@ export default function App() {
   }
 
   return (
-    <div className='flex flex-col items-center my-2 md:flex-row md:justify-evenly  md:items-start '>
+    <div className='flex flex-col items-center my-2 md:flex-row md:justify-evenly  md:items-start'>
       <div className='w-1/2 my-1 border p-5 bg-gradient-to-r from-blue-500 to-purple-700 '>
         <Input label="Name" name="name" type="text" onChange={onChangeHandle} value={user.name} />
         <Input label="Email" name="email" type="email" onChange={onChangeHandle} value={user.email} />
